@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@layer base {
+  :root {
+    --gold: #c9a84c;
+    --night: #07080f;
+    --abyss: #0d0e1a;
+    --card: #13141f;
+  }
+  body {
+    @apply bg-[#07080F] text-[#F0F0F5] antialiased;
+  }
+}
