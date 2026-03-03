@@ -64,6 +64,7 @@ export default function AuthPage() {
             {(["signin", "signup"] as const).map((t) => (
               <button
                 key={t}
+type="button"
                 onClick={() => setTab(t)}
                 className={`pb-3 text-sm font-medium transition-colors ${
                   tab === t
@@ -77,6 +78,7 @@ export default function AuthPage() {
           </div>
           {/* Google OAuth */}
           <button
+type="button"
             className="w-full flex items-center justify-center gap-3 py-3 px-4 mb-6
                              rounded-lg border border-white/10 text-white hover:bg-white/5 transition-colors"
           >
