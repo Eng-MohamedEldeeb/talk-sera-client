@@ -11,7 +11,7 @@ export default function App() {
   // Re-hydrate user on every page load when a token exists
   useEffect(() => {
     if (isAuthenticated) dispatch(getMe());
-  }, [dispatch, isAuthenticated]);
+  }, []);
 
   return <RouterProvider router={router} />;
 }
